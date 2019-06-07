@@ -2886,19 +2886,44 @@ table.alt tfoot {
 }
 
 .wrapper > .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5em 5em 3em 5em ;
   max-width: 100%;
   width: 75em;
+  margin: auto;
+}
+
+.wrapper > .inner > .intro-logo {
+  width: 60%;
+}
+
+.wrapper > .inner > {
+  width: 100%;
 }
 
 @media screen and (max-width: 1680px) {
   .wrapper > .inner {
     padding: 4em 4em 2em 4em ;
   }
+  .wrapper > .inner > .intro-logo {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 1280px) {
   .wrapper > .inner {
+    width: 100%;
+  }
+  .wrapper > .inner > .intro-logo {
     width: 100%;
   }
 }
@@ -3364,8 +3389,8 @@ body.is-ie #sidebar > .inner {
 }
 
 #sidebar nav a:after {
-  background-image: -webkit-gradient(linear, left top, right top, from(#42a668), to(#4eb78f));
-  background-image: linear-gradient(to right, #42a668, #4eb78f);
+  background-image: -webkit-gradient(linear, left top, right top, from(#1386a3), to(#42a668));
+  background-image: linear-gradient(to right, #1386a3, #42a668);
   -webkit-transition: max-width 0.2s ease;
   transition: max-width 0.2s ease;
   max-width: 0;

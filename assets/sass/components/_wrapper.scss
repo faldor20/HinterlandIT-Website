@@ -6,134 +6,152 @@
 
 /* Wrapper */
 
-	.wrapper {
-		position: relative;
+.wrapper {
+    position: relative;
 
-		> .inner {
-			@include padding(5em, 5em);
-			max-width: 100%;
-			width: _size(inner-width);
+    >.inner {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        @include padding(5em, 5em);
+        max-width: 100%;
+        width: _size(inner-width);
+        margin: auto;
 
-			@include breakpoint('<=xlarge') {
-				@include padding(4em, 4em);
-			}
+        >.intro-logo {
+            width: 60%;
+        }
 
-			@include breakpoint('<=large') {
-				width: 100%;
-			}
+        &> {
+            width: 100%;
+        }
 
-			@include breakpoint('<=small') {
-				@include padding(3em, 2em);
-			}
-		}
+        @include breakpoint('<=xlarge') {
+            @include padding(4em, 4em);
 
-		&.alt {
-			background-color: _palette(bg-alt);
-		}
+            >.intro-logo {
+                width: 80%;
+            }
+        }
 
-		&.style1 {
-			background-color: _palette(accent1);
-		}
+        @include breakpoint('<=large') {
+            width: 100%;
 
-		&.style1-alt {
-			background-color: _palette(accent1-alt);
-		}
+            >.intro-logo {
+                width: 100%;
+            }
+        }
 
-		&.style2 {
-			background-color: _palette(accent2);
-		}
+        @include breakpoint('<=small') {
+            @include padding(3em, 2em);
+        }
 
-		&.style2-alt {
-			background-color: _palette(accent2-alt);
-		}
+    }
 
-		&.style3 {
-			background-color: _palette(accent3);
-		}
+    &.alt {
+        background-color: _palette(bg-alt);
+    }
 
-		&.style3-alt {
-			background-color: _palette(accent3-alt);
-		}
+    &.style1 {
+        background-color: _palette(accent1);
+    }
 
-		&.fullscreen {
-			@include vendor('display', 'flex');
-			@include vendor('flex-direction', 'column');
-			@include vendor('justify-content', 'center');
-			min-height: 100vh;
+    &.style1-alt {
+        background-color: _palette(accent1-alt);
+    }
 
-			body.is-ie & {
-				height: 100vh;
-			}
+    &.style2 {
+        background-color: _palette(accent2);
+    }
 
-			@include breakpoint('<=large') {
-				min-height: calc(100vh - 2.5em);
+    &.style2-alt {
+        background-color: _palette(accent2-alt);
+    }
 
-				body.is-ie & {
-					height: calc(100vh - 2.5em);
-				}
-			}
+    &.style3 {
+        background-color: _palette(accent3);
+    }
 
-			@include breakpoint('<=small') {
-				padding: 2em 0;
-				min-height: 0;
+    &.style3-alt {
+        background-color: _palette(accent3-alt);
+    }
 
-				body.is-ie & {
-					height: auto;
-				}
-			}
-		}
+    &.fullscreen {
+        @include vendor('display', 'flex');
+        @include vendor('flex-direction', 'column');
+        @include vendor('justify-content', 'center');
+        min-height: 100vh;
 
-		&.fade-up {
-			> .inner {
-				@include vendor('transform', 'translateY(0)');
-				@include vendor('transition', (
-					'opacity #{_duration(activation)} ease',
-					'transform #{_duration(activation)} ease'
-				));
-				opacity: 1.0;
-			}
+        body.is-ie & {
+            height: 100vh;
+        }
 
-			&.inactive,
-			body.is-preload & {
-				> .inner {
-					opacity: 0;
-					@include vendor('transform', 'translateY(1em)');
-				}
-			}
-		}
+        @include breakpoint('<=large') {
+            min-height: calc(100vh - 2.5em);
 
-		&.fade-down {
-			> .inner {
-				@include vendor('transform', 'translateY(0)');
-				@include vendor('transition', (
-					'opacity #{_duration(activation)} ease',
-					'transform #{_duration(activation)} ease'
-				));
-				opacity: 1.0;
-			}
+            body.is-ie & {
+                height: calc(100vh - 2.5em);
+            }
+        }
 
-			&.inactive,
-			body.is-preload & {
-				> .inner {
-					opacity: 0;
-					@include vendor('transform', 'translateY(-1em)');
-				}
-			}
-		}
+        @include breakpoint('<=small') {
+            padding: 2em 0;
+            min-height: 0;
 
-		&.fade {
-			> .inner {
-				@include vendor('transition', (
-					'opacity #{_duration(activation)} ease'
-				));
-				opacity: 1.0;
-			}
+            body.is-ie & {
+                height: auto;
+            }
+        }
+    }
 
-			&.inactive,
-			body.is-preload & {
-				> .inner {
-					opacity: 0;
-				}
-			}
-		}
-	}
+    &.fade-up {
+        >.inner {
+            @include vendor('transform', 'translateY(0)');
+            @include vendor('transition', ('opacity #{_duration(activation)} ease',
+            'transform #{_duration(activation)} ease'
+            ));
+            opacity: 1.0;
+        }
+
+        &.inactive,
+        body.is-preload & {
+            >.inner {
+                opacity: 0;
+                @include vendor('transform', 'translateY(1em)');
+            }
+        }
+    }
+
+    &.fade-down {
+        >.inner {
+            @include vendor('transform', 'translateY(0)');
+            @include vendor('transition', ('opacity #{_duration(activation)} ease',
+            'transform #{_duration(activation)} ease'
+            ));
+            opacity: 1.0;
+        }
+
+        &.inactive,
+        body.is-preload & {
+            >.inner {
+                opacity: 0;
+                @include vendor('transform', 'translateY(-1em)');
+            }
+        }
+    }
+
+    &.fade {
+        >.inner {
+            @include vendor('transition', ('opacity #{_duration(activation)} ease'
+            ));
+            opacity: 1.0;
+        }
+
+        &.inactive,
+        body.is-preload & {
+            >.inner {
+                opacity: 0;
+            }
+        }
+    }
+}
