@@ -183,8 +183,8 @@ h1.major {
 }
 
 h1.major:after {
-  background-image: -webkit-gradient(linear, left top, right top, from(#42a668), to(#4eb78f));
-  background-image: linear-gradient(to right, #42a668, #4eb78f);
+  background-image: -webkit-gradient(linear, left top, right top, from(#3e82b9), to(#36adb1));
+  background-image: linear-gradient(to right, #3e82b9, #36adb1);
   -webkit-transition: max-width 0.2s ease;
   transition: max-width 0.2s ease;
   border-radius: 0.2em;
@@ -2146,7 +2146,7 @@ input[type="checkbox"] + label:before,
 input[type="radio"] + label:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: normal;
   text-transform: none !important;
@@ -2172,7 +2172,7 @@ input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
   background: #ffffff;
   border-color: #ffffff;
-  color: #4eb78f;
+  color: #36adb1;
   content: '\f00c';
 }
 
@@ -2221,7 +2221,7 @@ input[type="radio"] + label:before {
 .icon:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: normal;
   text-transform: none !important;
@@ -2248,27 +2248,27 @@ input[type="radio"] + label:before {
 }
 
 .wrapper.style1 .icon.major:before {
-  color: #42a668;
+  color: #3e82b9;
 }
 
 .wrapper.style1-alt .icon.major:before {
-  color: #338247;
+  color: #316793;
 }
 
 .wrapper.style2 .icon.major:before {
-  color: #4788e9;
+  color: #3eb16a;
 }
 
 .wrapper.style2-alt .icon.major:before {
-  color: #1b6be2;
+  color: #318b53;
 }
 
 .wrapper.style3 .icon.major:before {
-  color: #4eb78f;
+  color: #36adb1;
 }
 
 .wrapper.style3-alt .icon.major:before {
-  color: #3d9578;
+  color: #2a878a;
 }
 
 /* Image */
@@ -2531,7 +2531,7 @@ ul.icons li > a, ul.icons li > span {
 ul.icons li > a:before, ul.icons li > span:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: normal;
   text-transform: none !important;
@@ -2939,27 +2939,27 @@ table.alt tfoot {
 }
 
 .wrapper.style1 {
-  background-color: #42a668;
+  background-color: #3e82b9;
 }
 
 .wrapper.style1-alt {
-  background-color: #338247;
+  background-color: #316793;
 }
 
 .wrapper.style2 {
-  background-color: #4788e9;
+  background-color: #3eb16a;
 }
 
 .wrapper.style2-alt {
-  background-color: #1b6be2;
+  background-color: #318b53;
 }
 
 .wrapper.style3 {
-  background-color: #4eb78f;
+  background-color: #36adb1;
 }
 
 .wrapper.style3-alt {
-  background-color: #3d9578;
+  background-color: #2a878a;
 }
 
 .wrapper.fullscreen {
@@ -3056,7 +3056,7 @@ body.is-preload .wrapper.fade > .inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #42a668;
+  background-color: #3e82b9;
   cursor: default;
   padding: 1.75em 2em;
 }
@@ -3389,8 +3389,8 @@ body.is-ie #sidebar > .inner {
 }
 
 #sidebar nav a:after {
-  background-image: -webkit-gradient(linear, left top, right top, from(#1386a3), to(#42a668));
-  background-image: linear-gradient(to right, #1386a3, #42a668);
+  background-image: -webkit-gradient(linear, left top, right top, from(#1386a3), to(#3e82b9));
+  background-image: linear-gradient(to right, #1386a3, #3e82b9);
   -webkit-transition: max-width 0.2s ease;
   transition: max-width 0.2s ease;
   max-width: 0;
@@ -3471,7 +3471,7 @@ body.is-preload #sidebar nav ul li {
   }
   #sidebar nav a:after {
     background-image: none;
-    background-color: #4eb78f;
+    background-color: #36adb1;
   }
 }
 
