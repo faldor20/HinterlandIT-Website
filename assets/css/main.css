@@ -5807,6 +5807,23 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
+/*!
+ * Font Awesome Free 5.9.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("../fonts/fa-brands-400.eot");
+  src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+
 /*
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
@@ -8331,21 +8348,13 @@ ul.icons li:last-child {
   padding-right: 0;
 }
 
-ul.icons li > a, ul.icons li > span {
+ul.icons li > a,
+ul.icons li > span {
   border: 0;
-  text-decoration: none;
 }
 
-ul.icons li > a:before, ul.icons li > span:before {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: none !important;
-}
-
-ul.icons li > a .label, ul.icons li > span .label {
+ul.icons li > a .label,
+ul.icons li > span .label {
   display: none;
 }
 
